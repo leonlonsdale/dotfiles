@@ -1,3 +1,68 @@
+# Gruvbox theme
+# 
+# format = """
+# $character\
+# $directory\
+# $git_branch\
+# $git_status\
+# $python"""
+
+# add_newline = false
+
+# [character]
+# success_symbol = "[➜](bold #b8bb26)"  # Gruvbox green
+# error_symbol = "[➜](bold #fb4934)"    # Gruvbox red
+
+# [directory]
+# truncation_length = 1
+# read_only = ' 🔒'
+# style = "#fabd2f"                     # Gruvbox yellow
+
+# [git_branch]
+# symbol = 'git'
+# format = '[$symbol:([$branch](bold #fb4934))](bold #83a598) '  
+# # Branch name = Gruvbox red, label = Gruvbox blue
+
+# [git_status]
+# style = "bold #fe8019"               # Gruvbox orange
+
+# [python]
+# format = "[$virtualenv]($style) "
+# style = "#928374"                    # Gruvbox gray
+
+# kanagawa
+
+# format = """
+# $character\
+# $directory\
+# $git_branch\
+# $git_status\
+# $python"""
+
+# add_newline = false
+
+# [character]
+# success_symbol = "[➜](bold #98BB6C)"   # SpringGreen – success
+# error_symbol = "[➜](bold #E46876)"     # WaveRed – error
+
+# [directory]
+# truncation_length = 1
+# read_only = ' 🔒'
+# style = "#DCA561"                     # AutumnYellow – active element
+
+# [git_branch]
+# symbol = 'git'
+# format = '[$symbol:\([$branch](bold #E46876)\)](bold #7FB4CA) '
+# # WaveRed = branch name, SpringBlue = surrounding
+
+# [git_status]
+# style = "bold #DCA561"               # AutumnYellow – change indicators
+
+# [python]
+# format = "[$virtualenv]($style) "
+# style = "#54546D"                    # Muted gray-purple – subtle
+
+# catppucin mocha
 format = """
 $character\
 $directory\
@@ -8,21 +73,23 @@ $python"""
 add_newline = false
 
 [character]
-success_symbol = "[➜](bold green) "
-error_symbol = "[➜](bold red) "
+success_symbol = "[➜](bold #a6e3a1)"   # Green – success (Catppuccin green)
+error_symbol = "[➜](bold #f38ba8)"     # Red – error (Catppuccin red)
 
 [directory]
 truncation_length = 1
 read_only = ' 🔒'
-style = "#d2a8ff"
+style = "#f9e2af"                     # Yellow – active directory (Catppuccin yellow)
 
 [git_branch]
 symbol = 'git'
-format = '[$symbol:\([$branch](bold red)\)](bold blue) '
+format = '[$symbol:\([$branch](bold #f38ba8)\)](bold #89b4fa) '
+# Branch = red, Label = blue
 
 [git_status]
-style = "bold yellow"
+style = "bold #f9e2af"               # Yellow – change indicators
 
 [python]
 format = "[$virtualenv]($style) "
-style = "bright-black"
+style = "#9399b2"                    # Subtle text (Catppuccin overlay1)
+

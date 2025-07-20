@@ -10,7 +10,7 @@ SETUVAR fish_color_cwd_root:d2a8ff
 SETUVAR fish_color_end:fab387
 SETUVAR fish_color_error:f38ba8
 SETUVAR fish_color_escape:eba0ac
-SETUVAR fish_color_gray:6e7681
+SETUVAR fish_color_gray:928374
 SETUVAR fish_color_history_current:\x2d\x2dbold
 SETUVAR fish_color_host:89b4fa
 SETUVAR fish_color_host_remote:a6e3a1

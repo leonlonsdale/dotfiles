@@ -24,6 +24,33 @@
    authorColors:
      '*': '#b4befe'
 
+# # Gruvbox Dark
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - '#fabd2f'   # yellow - active panels
+#       - bold
+#     inactiveBorderColor:
+#       - '#665c54'   # dark gray - inactive panels
+#     optionsTextColor:
+#       - '#83a598'   # blue - options text
+#     selectedLineBgColor:
+#       - '#3c3836'   # medium-dark gray - selected line
+#     cherryPickedCommitBgColor:
+#       - '#504945'   # slightly lighter gray
+#     cherryPickedCommitFgColor:
+#       - '#ebdbb2'   # light beige - text on cherry-picked bg
+#     unstagedChangesColor:
+#       - '#fb4934'   # red - clear warning color
+#     defaultFgColor:
+#       - '#ebdbb2'   # Gruvbox fg (high contrast on dark bg)
+#     searchingActiveBorderColor:
+#       - '#b8bb26'   # green - draws attention when searching
+
+#   authorColors:
+#     '*': '#d3869b'  # purple - for authors
+
+
 # Tokyo Night Storm
 # gui:
 #   theme:
@@ -212,3 +239,28 @@
 #   authorColors:
 #     '*': '#79c0ff'        # scale.blue.2
 
+# Kanagawa Theme
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - '#DCA561'   # AutumnYellow - warm highlight
+#       - bold
+#     inactiveBorderColor:
+#       - '#54546D'   # Dark muted purple/gray from Kanagawa
+#     optionsTextColor:
+#       - '#7FB4CA'   # SpringBlue - gentle but visible
+#     selectedLineBgColor:
+#       - '#2A2A37'   # SumiInk1 - selection background
+#     cherryPickedCommitBgColor:
+#       - '#3A3A4D'   # Deeper gray, distinguishable
+#     cherryPickedCommitFgColor:
+#       - '#DCD7BA'   # FujiWhite - soft foreground
+#     unstagedChangesColor:
+#       - '#E46876'   # WaveRed - clear alert color
+#     defaultFgColor:
+#       - '#DCD7BA'   # FujiWhite - base foreground
+#     searchingActiveBorderColor:
+#       - '#98BB6C'   # SpringGreen - active search border
+
+#   authorColors:
+#     '*': '#D27E99'  # SakuraPink - subtle and elegant
