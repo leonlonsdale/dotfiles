@@ -1,0 +1,10 @@
+font-family = Bale Mono
+font-style = Regular
+# font-style-bold = Medium
+# font-style-italic = Regular
+# font-style-bold-italic = Medium
+adjust-cell-height = 8
+adjust-cursor-height = 7
+# adjust-box-thickness = 1
+# font-thicken = true
+font-size = 16

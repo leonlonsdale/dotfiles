@@ -1,0 +1,10 @@
+font-family = Monaco
+font-style = Regular
+# font-style-bold = Medium
+# font-style-italic = Book Italic
+# font-style-bold-italic = Medium Italic
+adjust-cell-height = 4
+adjust-cursor-height = 7
+adjust-box-thickness = 1
+font-thicken = true
+font-size = 16
