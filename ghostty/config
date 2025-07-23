@@ -10,10 +10,16 @@ auto-update-channel = tip
 clipboard-read = allow
 clipboard-write = allow
 
+# # font display
+# # -------------------------------------
+
+# font-thicken = true
+# font-thicken-strength = 0
+
 # config files
 # -------------------------------------
-config-file = ./theme/gruvbox-material
-config-file = ./font/cartograph
+config-file = ./theme/catppuccin-frappe
+config-file = ./font/menlo
 # config-file = ./opacity/80
 # config-file = ./blur/50
 config-file = ./keybind/keybinds

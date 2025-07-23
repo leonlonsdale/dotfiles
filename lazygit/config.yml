@@ -1,54 +1,54 @@
  # Catppuccin Mocha
- # gui:
- #   theme:
- #     activeBorderColor:
- #       - '#f5e0dc'
- #       - bold
- #     inactiveBorderColor:
- #       - '#a6adc8'
- #     optionsTextColor:
- #       - '#89b4fa'
- #     selectedLineBgColor:
- #       - '#313244'
- #     cherryPickedCommitBgColor:
- #       - '#45475a'
- #     cherryPickedCommitFgColor:
- #       - '#f5e0dc'
- #     unstagedChangesColor:
- #       - '#f38ba8'
- #     defaultFgColor:
- #       - '#cdd6f4'
- #     searchingActiveBorderColor:
- #       - '#f9e2af'
+ gui:
+   theme:
+     activeBorderColor:
+       - '#f5e0dc'
+       - bold
+     inactiveBorderColor:
+       - '#a6adc8'
+     optionsTextColor:
+       - '#89b4fa'
+     selectedLineBgColor:
+       - '#313244'
+     cherryPickedCommitBgColor:
+       - '#45475a'
+     cherryPickedCommitFgColor:
+       - '#f5e0dc'
+     unstagedChangesColor:
+       - '#f38ba8'
+     defaultFgColor:
+       - '#cdd6f4'
+     searchingActiveBorderColor:
+       - '#f9e2af'
 
- #   authorColors:
- #     '*': '#b4befe'
+   authorColors:
+     '*': '#b4befe'
 
 # # Gruvbox Dark
-gui:
-  theme:
-    activeBorderColor:
-      - '#fabd2f'   # yellow - active panels
-      - bold
-    inactiveBorderColor:
-      - '#665c54'   # dark gray - inactive panels
-    optionsTextColor:
-      - '#83a598'   # blue - options text
-    selectedLineBgColor:
-      - '#3c3836'   # medium-dark gray - selected line
-    cherryPickedCommitBgColor:
-      - '#504945'   # slightly lighter gray
-    cherryPickedCommitFgColor:
-      - '#ebdbb2'   # light beige - text on cherry-picked bg
-    unstagedChangesColor:
-      - '#fb4934'   # red - clear warning color
-    defaultFgColor:
-      - '#ebdbb2'   # Gruvbox fg (high contrast on dark bg)
-    searchingActiveBorderColor:
-      - '#b8bb26'   # green - draws attention when searching
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - '#fabd2f'   # yellow - active panels
+#       - bold
+#     inactiveBorderColor:
+#       - '#665c54'   # dark gray - inactive panels
+#     optionsTextColor:
+#       - '#83a598'   # blue - options text
+#     selectedLineBgColor:
+#       - '#3c3836'   # medium-dark gray - selected line
+#     cherryPickedCommitBgColor:
+#       - '#504945'   # slightly lighter gray
+#     cherryPickedCommitFgColor:
+#       - '#ebdbb2'   # light beige - text on cherry-picked bg
+#     unstagedChangesColor:
+#       - '#fb4934'   # red - clear warning color
+#     defaultFgColor:
+#       - '#ebdbb2'   # Gruvbox fg (high contrast on dark bg)
+#     searchingActiveBorderColor:
+#       - '#b8bb26'   # green - draws attention when searching
 
-  authorColors:
-    '*': '#d3869b'  # purple - for authors
+#   authorColors:
+#     '*': '#d3869b'  # purple - for authors
 
 
 # Tokyo Night Storm

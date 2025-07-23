@@ -1,10 +1,10 @@
 font-family = Menlo
 font-style = Regular
-# font-style-bold = Medium
-# font-style-italic = Regular
-# font-style-bold-italic = Medium
-adjust-cell-height = 8
-adjust-cursor-height = 7
-# adjust-box-thickness = 1
+font-style-bold = Medium
+font-style-italic = Regular
+font-style-bold-italic = Medium
 font-thicken = true
-font-size = 15
+font-thicken-strength = 10
+adjust-cell-height = 8%
+adjust-cell-width = -7%
+font-size = 18
