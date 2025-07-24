@@ -1,28 +1,40 @@
+# macos
+# -------------------------------------
+macos-option-as-alt = right
+macos-titlebar-style = hidden
+macos-icon = "xray"
+# macos-icon-frame = "plastic"
+# macos-icon-ghost-color = #414868
+# macos-icon-screen-color = #2ac3de
+
 # general
 # -------------------------------------
 mouse-hide-while-typing = true
 cursor-style-blink = true
 auto-update-channel = tip
-# window-padding-color = extend-always
 
 # clipboard
 # -------------------------------------
 clipboard-read = allow
 clipboard-write = allow
 
-# # font display
-# # -------------------------------------
+# font display
+# -------------------------------------
 
-# font-thicken = true
-# font-thicken-strength = 0
+font-family = Jetbrains Mono
+font-size = 16
+adjust-cell-width = -7%
+adjust-cell-height = 9
+
+# Appearance
+# -------------------------------------
+theme = "Tokyonight-Storm"
+background = #1b1d1e
+background-opacity = 0.85
+background-blur-radius = 40
 
 # config files
 # -------------------------------------
-config-file = ./theme/catppuccin-frappe
-config-file = ./font/menlo
-# config-file = ./opacity/80
-# config-file = ./blur/50
 config-file = ./keybind/keybinds
-config-file = ./macos/macos-only
 
 

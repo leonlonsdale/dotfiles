@@ -4,9 +4,10 @@
 set -g status on
 set -g status-interval 5
 set -g status-justify left
-set -g status-bg "#24283B"                   # bg
-set -g status-fg "#c0caf5"                   # fg
-set -g status-style "fg=#c0caf5,bg=#24283B"
+# set -g status-bg "#24283B"                   # bg
+# set -g status-fg "#c0caf5"                   # fg
+set-option -g status-style bg=default
+# set -g status-style "fg=#c0caf5,bg=#24283B"
 set -g default-terminal "tmux-256color"
 set -as terminal-overrides ',xterm-256color:Tc'
 
