@@ -179,3 +179,8 @@ auto-format = true
 [[language]]
 name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }
+
+[[language]]
+name = "lua"
+formatter = { command = "stylua", args = [ "-" ] }
+auto-format = true

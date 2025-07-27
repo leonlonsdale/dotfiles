@@ -17,12 +17,13 @@ auto-update-channel = tip
 # -------------------------------------
 clipboard-read = allow
 clipboard-write = allow
+copy-on-select = clipboard
 
 # font display
 # -------------------------------------
 
 font-family = Jetbrains Mono
-font-size = 16
+font-size = 17
 adjust-cell-width = -7%
 adjust-cell-height = 9
 
@@ -30,11 +31,24 @@ adjust-cell-height = 9
 # -------------------------------------
 theme = "Tokyonight-Storm"
 background = #1b1d1e
-background-opacity = 0.85
-background-blur-radius = 40
+background-opacity = 0.8
+background-blur-radius = 60
+unfocused-split-opacity = 0.5
 
-# config files
+# keys
 # -------------------------------------
-config-file = ./keybind/keybinds
 
+keybind = super+shift+p=toggle_command_palette
+keybind = super+shift+r=reload_config
 
+# Splits
+
+keybind = super+shift+z=toggle_split_zoom
+keybind = super+shift+equal=equalize_splits
+keybind = super+shift+arrow_right=new_split:right
+keybind = super+shift+arrow_down=new_split:down
+
+keybind = alt+arrow_right=goto_split:right
+keybind = alt+arrow_left=goto_split:left
+keybind = alt+arrow_down=goto_split:down
+keybind = alt+arrow_up=goto_split:up

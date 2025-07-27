@@ -19,15 +19,16 @@ completion-replace = true
 rulers = [80]
 indent-heuristic = "tree-sitter"
 end-of-line-diagnostics = "info"
+rainbow-brackets = true
 
 [editor.statusline]
-left = ["mode", "file-base-name", "file-modification-indicator"]
+left = ["mode", "spacer", "version-control", "spacer", "separator", "file-base-name", "file-modification-indicator", "spinner"]
 center = ["workspace-diagnostics"]
 right = ["spinner"]
-separator = "|"
-mode.normal = "NOR"
-mode.insert = "INS"
-mode.select = "SEL"
+separator = "●"
+mode.normal = "N"
+mode.insert = "I"
+mode.select = "S"
 
 [editor.cursor-shape]
 insert = "bar"
