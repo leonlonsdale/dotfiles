@@ -6,8 +6,8 @@
 # inherits = "catppuccin_frappe"
 # inherits = "ashen"
 # inherits = "github_dark_dimmed"
-# inherits = "ayu_mirage"
-inherits = "tokyonight_storm"
+inherits = "ayu_mirage"
+# inherits = "tokyonight_storm"
 # inherits = "github_dark"
 # inherits = "gruvbox"
 # inherits = "everforest_dark"
@@ -27,3 +27,4 @@ inherits = "tokyonight_storm"
 # dark plus edits
 # "comment" = { fg = "dark_gray" }
 # "ui.statusline.insert" = { fg = "dark_gray2", bg = "pale_green" }
+# "variable.other.member" = "blue2"

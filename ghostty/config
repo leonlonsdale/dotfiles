@@ -22,18 +22,20 @@ copy-on-select = clipboard
 # font display
 # -------------------------------------
 
-font-family = Jetbrains Mono
-font-size = 17
-adjust-cell-width = -7%
-adjust-cell-height = 9
+font-family = Menlo
+font-thicken = true
+font-size = 16
+adjust-cell-width = -6%
+adjust-cell-height = 12
 
 # Appearance
 # -------------------------------------
-theme = "Tokyonight-Storm"
-background = #1b1d1e
-background-opacity = 0.8
-background-blur-radius = 60
-unfocused-split-opacity = 0.5
+# theme = "Tokyonight-Storm"
+# background = #1b1d1e
+# background-opacity = 0.8
+# background-blur-radius = 60
+theme = "Ayu Mirage"
+unfocused-split-opacity = 0.1
 
 # keys
 # -------------------------------------

@@ -22,9 +22,9 @@ end-of-line-diagnostics = "info"
 rainbow-brackets = true
 
 [editor.statusline]
-left = ["mode", "spacer", "version-control", "spacer", "separator", "file-base-name", "file-modification-indicator", "spinner"]
+left = ["mode", "file-base-name", "file-modification-indicator", "spinner"]
 center = ["workspace-diagnostics"]
-right = ["spinner"]
+right = ["version-control"]
 separator = "●"
 mode.normal = "N"
 mode.insert = "I"
