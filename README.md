@@ -2,26 +2,25 @@
 
 ## Contents
 
-- [Introduction](#introduction)
-- [Install Homebrew](#install-homebrew)
-- [Cloning Dotfiles](#cloning-dotfiles)
-- [Configuring Zsh](#configuring-zsh)
-  - [Homebrew Aliases](#homebrew-aliases)
-- [Managing Software with Brewfile](#managing-software-with-brewfile)
-  - [What is a Brewfile?](#what-is-a-brewfile)
-  - [Installing All Packages](#installing-all-packages)
-- [Switching to Fish Shell](#switching-to-fish-shell)
-  - [Temporary Switch via .zshrc](#temporary-switch-via-zshrc)
-  - [Setting Fish as Default Shell](#setting-fish-as-default-shell)
-- [Building Helix From Source](#building-helix-from-source)
-  - [Installing Rust](#installing-rust)
-  - [Cloning Repositories](#cloning-repositories)
+<!--toc:start-->
+
+- [Dotfiles Guide](#dotfiles-guide)
+  - [Contents](#contents)
+  - [Introduction](#introduction)
+  - [Install Homebrew](#install-homebrew)
+  - [Cloning Dotfiles](#cloning-dotfiles)
+  - [Configuring Zsh](#configuring-zsh)
+    - [Homebrew Aliases](#homebrew-aliases)
+  - [Managing Software with Brewfile](#managing-software-with-brewfile)
   - [Building Helix](#building-helix)
-- [Additional Tips](#additional-tips)
-  - [Updating Brewfile](#updating-brewfile)
-  - [Markdown Live Preview](#markdown-live-preview)
-  - [Tmux Usage](#tmux-usage)
+    - [Installing Rust](#installing-rust)
+    - [Cloning Repositories](#cloning-repositories)
+  - [Additional Tips](#additional-tips)
+    - [Updating Brewfile](#updating-brewfile)
+    - [Markdown Live Preview](#markdown-live-preview)
+  - [Updating Submodules](#updating-submodules)
   - [Zellij Usage](#zellij-usage)
+  <!--toc:end-->
 
 ---
 
@@ -29,21 +28,22 @@
 
 I use the following tools to enhance my development workflow:
 
+- **[Homebrew Package Manager](https://brew.sh/)**
 - **[Ghostty Terminal](https://github.com/ghostty/ghostty)**
-- **[Fish Shell](https://github.com/fish-shell/fish-shell)**
 - **[Helix Editor](https://github.com/helix-editor/helix)**
-- **[Zellij](https://github.com/zellij-org/zellij)**
 - **[Yazi File Explorer](https://github.com/sxyazi/yazi)**
 - **[Lazygit](https://github.com/jesseduffield/lazygit)** for git management
-- **[Homebrew Package Manager](https://brew.sh/)**
+- **[Lazydocker](https://github.com/jesseduffield/lazydocker)** for managing Docker containers easily
+- **[Eza](https://the.exa.website/)** — a modern replacement for `ls` with icons and better formatting
+- **[fd](https://github.com/sharkdp/fd)** — a simple, fast, and user-friendly alternative to `find`
 
-> **Note**: Everything is themed with `Ayu Mirage`. The lazygit, zellij, and yazi themes are custom made. I also include a theme for Tmux if you prefer that over Zellij
-
-- **[Tmux Terminal Multiplexer](https://github.com/tmux/tmux)**
+> **Note**: Everything is themed with `Ayu Mirage`. The lazygit and yazi themes are custom made. I also include themes for TMUX and Zellij.
 
 ---
 
 ## Install Homebrew
+
+My config is set up to rely on a Brewfile for quicker package installation through Homebrew.
 
 You can install Homebrew for MacOS and Linux from their [official website](https://brew.sh/).
 
@@ -53,36 +53,44 @@ The dotfiles include a `Brewfile` to simplify package installation.
 
 ## Cloning Dotfiles
 
-### ⚠️ Warning: Potential Data Loss
+> ⚠️ Warning: Potential Data Loss  
+> If you have an existing `~/.config` directory, **you should create a backup** before proceeding.
 
-If you have an existing `~/.config` directory, the steps below **will completely delete it**. Make sure you back up your configuration files before proceeding.
-
-### Steps
-
-1. **Backup and Remove Existing `.config` Directory:**
+To clone including all submodules (recommended):
 
 ```bash
-mv ~/.config ~/.config_backup
-rm -rf ~/.config
+git clone --recurse-submodules https://github.com/ionztorm/dotfiles.git ~/.config
 ```
 
-2. **Clone the Dotfiles Repository:**
+If you already cloned without submodules, you can initialize them later:
 
 ```bash
-git clone https://github.com/ionztorm/dotfiles.git ~/.config
+git submodule update --init --recursive
 ```
 
 ---
 
 ## Configuring Zsh
 
-### Homebrew Aliases
-
-Edit your `.zshrc` file:
+Run the following commands to update your `~/.zshrc`:
 
 ```bash
-echo 'alias bfi="brew bundle --file=~/.config/homebrew/Brewfile"' >> ~/.zshrc
-echo 'alias bfc="brew bundle dump --file=~/.config/homebrew/Brewfile"' >> ~/.zshrc
+cat << 'EOF' >> ~/.zshrc
+
+export XDG_CONFIG_HOME="$HOME/.config"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+
+alias cl="clear"
+alias ls="eza --icons=always"
+alias cd="z"
+
+# brewfile
+
+alias bfi="brew bundle --file=~/.config/homebrew/Brewfile"
+alias bfc="brew bundle dump --file=~/.config/homebrew/Brewfile"
+alias bfr='rm -f ~/.config/homebrew/Brewfile && brew bundle dump --file=~/.config/homebrew/Brewfile'
+
+EOF
 ```
 
 Apply changes with:
@@ -95,35 +103,56 @@ source ~/.zshrc
 
 ## Managing Software with Brewfile
 
-Install all packages from my brewfile:
+Install all packages from my Brewfile:
 
 ```bash
 bfi
 ```
 
-I build helix from source, but if you prefer not to, use:
-
-```bash
-brew install helix
-```
-
 ---
 
-## Switching to Fish Shell
-
-### Temporary Switch via `.zshrc`
-
-Add this line to your `.zshrc` to start Fish when opening a terminal:
+## Update zshrc for installed packages
 
 ```bash
-echo 'exec fish' >> ~/.zshrc
+cat << 'EOF' >> ~/.zshrc
+export PATH=$PATH:$HOME/go/bin
+
+eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
+
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# History
+
+HISTFILE=$HOME/.zhistory
+SAVEHIST=1000
+HISTSIZE=999
+setopt share_history
+setopt hist_expire_dups_first
+setopt hist_ignore_dups
+setopt hist_verify
+
+bindkey '^[[A' history-search-backward
+bindkey '^[[B' history-search-forward
+EOF
 ```
 
 ---
 
 ## Building Helix
 
+> If you don't want to build from source, you can install with Homebrew:
+>
+> ```bash
+> brew install helix
+> ```
+
+To build Helix from source, follow these steps:
+
 ### Installing Rust
+
+> If you use my neovim config `ionzvim` you may want to customise this Rust install for nightly Rust. This enables the blink fuzzy searching. The neovim config is not included here, find it here: [ionzvim](https://github.com/leonlonsdale/ionzvim)
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -135,29 +164,20 @@ Check installation:
 cargo --version
 ```
 
-You may need to restart your terminal
+You may need to restart your terminal.
 
 ### Cloning Repositories
 
-```bash
-mkdir -p ~/src/
-cd ~/src
-```
-
-Clone repository:
+Copy-paste:
 
 ```bash
+mkdir -p ~/src/ && cd ~/src
 git clone https://github.com/helix-editor/helix
-```
-
-### Building Helix
-
-```bash
-cd ~/src/helix
+cd helix
 cargo install --path helix-term --locked
 ```
 
-Symlink runtime:
+Once the build is complete, symlink the runtime:
 
 ```bash
 rm -rf ~/.config/helix/runtime && ln -s "$PWD/runtime" ~/.config/helix/runtime
@@ -186,23 +206,21 @@ gh extension install yusukebe/gh-markdown-preview
 To use:
 
 ```bash
-gh markdown-preview <path/file name>
+gh markdown-preview <path/file-name>
 ```
 
-### Zellij Usage
+---
 
-I include a number of fish alias' to make using zellij simpler.
+## Updating Submodules
 
-| Alias  | Command         | Description                   |
-| ------ | --------------- | ----------------------------- |
-| `zj`   | `zellij`        | Base Zellij command           |
-| `zjs`  | `zellij -s`     | Start new session             |
-| `zja`  | `zellij attach` | Attach to a session           |
-| `zjls` | `zellij ls`     | List sessions                 |
-| `zjd`  | `zellij d`      | Delete session                |
-| `zjda` | `zellij da`     | Delete all sessions           |
-| `zjk`  | `zellij k`      | Kill session                  |
-| `zjka` | `zellij ka`     | Kill all sessions             |
-| `zjh`  | `zellij -h`     | Help                          |
-| `zjl`  | `zellij -l`     | List available layouts        |
-| `zjn`  | `zellij -n`     | Start new session with layout |
+To update all submodules to their latest commits, run:
+
+```bash
+git submodule update --remote --merge
+```
+
+---
+
+## Zellij Usage
+
+_(You can add info here if you want)_
