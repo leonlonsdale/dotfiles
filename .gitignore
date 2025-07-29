@@ -14,3 +14,9 @@ nvim
 */runtime*
 tmux/plugins/*
 financli/*
+fish
+btop
+lazydocker
+wezterm
+.luarc.json
+lazysql

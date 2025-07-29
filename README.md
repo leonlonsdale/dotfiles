@@ -103,6 +103,12 @@ source ~/.zshrc
 
 ## Managing Software with Brewfile
 
+> This step will install a lot of packages that I use. You may not want all of them. Edit the Brew file to adjust the install list:
+>
+> ```bash
+> vi ~/.config/homebrew/Brewfile
+> ```
+
 Install all packages from my Brewfile:
 
 ```bash
