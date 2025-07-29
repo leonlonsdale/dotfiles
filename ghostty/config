@@ -22,7 +22,7 @@ copy-on-select = clipboard
 # font display
 # -------------------------------------
 
-font-family = Menlo
+font-family = MesloLGL Nerd Font Mono
 font-thicken = true
 font-size = 16
 adjust-cell-width = -6%
