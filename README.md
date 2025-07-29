@@ -62,7 +62,7 @@ To clone including all submodules (recommended):
 git clone --recurse-submodules https://github.com/ionztorm/dotfiles.git ~/.config
 ```
 
-If you already cloned without submodules, you can initialize them later:
+If you already cloned without submodules, you can initialise them later:
 
 ```bash
 git submodule update --init --recursive
@@ -156,7 +156,7 @@ EOF
 
 To build Helix from source, follow these steps:
 
-### Installing Rust
+### Install Rust
 
 > If you use my neovim config `ionzvim` you may want to customise this Rust install for nightly Rust. This enables the blink fuzzy searching. The neovim config is not included here, find it here: [ionzvim](https://github.com/leonlonsdale/ionzvim)
 
@@ -172,7 +172,7 @@ cargo --version
 
 You may need to restart your terminal.
 
-### Cloning Repositories
+### Clone and Build
 
 Copy-paste:
 
@@ -195,7 +195,7 @@ rm -rf ~/.config/helix/runtime && ln -s "$PWD/runtime" ~/.config/helix/runtime
 
 ### Updating Brewfile
 
-To delete the current `Brewfile` and generate a new one, I include a fish alias:
+To delete the current `Brewfile` and generate a new one, I include an alias:
 
 ```bash
 bfr
@@ -224,9 +224,3 @@ To update all submodules to their latest commits, run:
 ```bash
 git submodule update --remote --merge
 ```
-
----
-
-## Zellij Usage
-
-_(You can add info here if you want)_
