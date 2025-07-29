@@ -1,0 +1,3 @@
+[submodule "starship"]
+	path = starship
+	url = git@github-ionztorm:leonlonsdale/robbyrusselish.git
