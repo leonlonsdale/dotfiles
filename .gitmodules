@@ -1,3 +1,6 @@
 [submodule "starship"]
 	path = starship
 	url = git@github-ionztorm:leonlonsdale/robbyrusselish.git
+[submodule "nvim"]
+	path = nvim
+	url = git@github-ionztorm:leonlonsdale/ionzvim.git
