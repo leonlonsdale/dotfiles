@@ -10,7 +10,6 @@ helix/runtime/grammars/sources
 raycast/extensions
 exercism/user.json
 zed
-nvim
 */runtime*
 tmux/plugins/*
 financli/*
