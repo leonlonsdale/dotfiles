@@ -54,28 +54,53 @@
 # gui:
 #   theme:
 #     activeBorderColor:
-#       - '#7aa2f7'        # Blue (Active)
+#       - "#7aa2f7" # Blue (Active)
 #       - bold
 #     inactiveBorderColor:
-#       - '#565f89'        # Dim gray (Inactive)
+#       - "#565f89" # Dim gray (Inactive)
 #     optionsTextColor:
-#       - '#7dcfff'        # Cyan (Options)
+#       - "#7dcfff" # Cyan (Options)
 #     selectedLineBgColor:
-#       - '#292e42'        # Dark background highlight
+#       - "#292e42" # Dark background highlight
 #     cherryPickedCommitBgColor:
-#       - '#3b4261'        # Subtle dark bg
+#       - "#3b4261" # Subtle dark bg
 #     cherryPickedCommitFgColor:
-#       - '#f7768e'        # Red (emphasis)
+#       - "#f7768e" # Red (emphasis)
 #     unstagedChangesColor:
-#       - '#f7768e'        # Red (unstaged)
+#       - "#f7768e" # Red (unstaged)
 #     defaultFgColor:
-#       - '#c0caf5'        # Default foreground
+#       - "#c0caf5" # Default foreground
 #     searchingActiveBorderColor:
-#       - '#e0af68'        # Yellow (search highlight)
+#       - "#e0af68" # Yellow (search highlight)
 
 #   authorColors:
-#     '*': '#bb9af7'       # Magenta (author names)
+#     "*": "#bb9af7" # Magenta (author names)
 
+# Everforest Dark
+gui:
+  theme:
+    activeBorderColor:
+      - "#7fbbb3" # Blue-green (Active - Functions/Keywords)
+      - bold
+    inactiveBorderColor:
+      - "#4b565c" # Gray (Inactive border)
+    optionsTextColor:
+      - "#83c092" # Aqua (Options text)
+    selectedLineBgColor:
+      - "#434f55" # Selection background
+    cherryPickedCommitBgColor:
+      - "#3c4841" # Subtle dark bg (darker than base)
+    cherryPickedCommitFgColor:
+      - "#e67e80" # Red (emphasis)
+    unstagedChangesColor:
+      - "#e67e80" # Red (unstaged)
+    defaultFgColor:
+      - "#d3c6aa" # Default foreground
+    searchingActiveBorderColor:
+      - "#dbbc7f" # Yellow (search highlight)
+
+  authorColors:
+    "*": "#DBBC7F"
 # Ayu Mirage
 # gui:
 #   theme:

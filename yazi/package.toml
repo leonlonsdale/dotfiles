@@ -32,11 +32,6 @@ rev = "5412a78"
 hash = "60690920e8c0f9f81ff02009de5d156f"
 
 [[flavor.deps]]
-use = "BennyOe/tokyo-night"
-rev = "5f56364"
-hash = "c0bf69ad2c44005892d586e9693993c6"
-
-[[flavor.deps]]
 use = "bennyyip/gruvbox-dark"
 rev = "91fdfa7"
 hash = "f48f510e5505f5d01e79c4f8257ec5cb"
@@ -45,3 +40,13 @@ hash = "f48f510e5505f5d01e79c4f8257ec5cb"
 use = "yazi-rs/flavors:catppuccin-frappe"
 rev = "d3fd3a5"
 hash = "d659c6fde5148fb5c066518d7fdecddc"
+
+[[flavor.deps]]
+use = "BennyOe/tokyo-night"
+rev = "5f56364"
+hash = "c0bf69ad2c44005892d586e9693993c6"
+
+[[flavor.deps]]
+use = "Chromium-3-Oxide/everforest-medium"
+rev = "0158f0f"
+hash = "dbbbfe681e156c28303efb1f44b6cbc4"
