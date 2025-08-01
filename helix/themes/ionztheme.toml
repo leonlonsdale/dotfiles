@@ -1,0 +1,127 @@
+# ionztheme
+# Author: Leon Lonsdale
+# https://github.com/leonlonsdale
+# ===============================
+
+"type" = "pink"
+
+"keyword" = "fuchsia"
+"keyword.operator" = "pink"
+"keyword.directive" = "pink"
+"keyword.storage" = "indigo"
+
+"module" = "purple"
+"string" = "string"
+
+"constant" = "fg"
+"constant.builtin" = { fg = "orange", modifilers = ["italic"] } 
+"constant.builtin.boolean" = "red"
+"constant.numeric" = "amber"
+"constnat.character.escape" = "blue"
+
+"comment" = { fg = "grey2", modifiers = ["italic"] }
+
+"variable" = "white"
+"variable.builtin" = { fg = "red", modifilers = ["italic"]}
+"variable.parameter" = { fg = "purple", modifiers = ["italic"] } # func params & struct vals
+"variable.other.member" = "indigo"
+
+"label" = "orange"
+
+"punctuation" = "orange"
+"punctuation.delimiter" = "purple"
+"punctuation.bracket" = "fg"
+"punctuation.special" = "pink"
+
+"operator" = "orange" # math operators
+
+"function" = { fg = "fg", modifiers = ["bold"] }
+"function.macro" = "blue"
+
+"tag" = "orange"
+
+"namespace" = { fg= "fg", modifiers = ["italic"]}
+
+"attribute" = { fg = "grey", modifilers = ["italic"]}
+
+"constructor" = "red"
+
+"special" = "orange2"
+
+"diff.plus" = "green"
+"diff.delta" = "blue"
+"diff.minus" = "red"
+
+
+"ui.background" = { bg = "bg"}
+"ui.selection" = { bg = "grey1"}
+"ui.cursor" = { bg="fuchsia", fg="grey3"}
+
+"ui.cursorline.primary" = { bg = "red"}
+"ui.cursorline.secondary" = { bg = "grey1"}
+"ui.virtual.ruler" = { bg = "bg2" }
+"ui.linenr" = "grey3"
+"ui.linenr.selected" = "indigo"
+"ui.statusline" = { fg = "grey1"}
+"ui.statusline.normal" = {fg = "grey4", bg="indigo"}
+"ui.statusline.insert" = {fg = "grey4", bg="pink"}
+"ui.statusline.select" = {fg = "grey4", bg="purple"}
+"ui.bufferline" = { fg="indigo", bg="bg"}
+"ui.bufferline.active" = { fg = "bg", bg="indigo", modifiers = ["bold"]}
+"ui.popup" = { fg = "fg", bg = "bg" }
+"ui.picker.header" = { fg = "indigo", modifiers = ["bold", "underlined"] }
+"ui.window" = { fg = "fg", bg = "bg" }
+"ui.help" = { fg = "indigo", bg = "bg" }
+"ui.text" = { fg= "fg" }
+"ui.text.directory" = { fg = "rose" }
+"ui.text.focus" = {fg = "indigo", underline = { color = "indigo", style = "line"}}
+"ui.menu" = { fg = "fg", bg = "bg" }
+"ui.menu.selected" = {fg = "indigo", underline = { color = "indigo", style = "line"}}
+
+
+"hint" = "green"
+"info" = "blue"
+"warning" = "amber"
+"error" = "red"
+
+"diagnostic.hint" = { underline = { color = "green", style = "curl" } }
+"diagnostic.info" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "amber", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+
+[palette]
+bg = "#1D1D23"
+bg2 = "#3D3A4B"
+fg = "#C4B4FF"
+
+red = "#c6d2ff"
+orange = "#FFB86B"
+amber = "#FFD230"
+yellow = "#FEF184"
+lime = "#BBF452"
+green = "#7BF1A8"
+emerald = "#A4F4CF"
+teal = "#00786F"
+cyan = "#52EAFD"
+blue = "#BFDBFF"
+indigo = "#A3B4FF"
+violet = "#C4B4FF"
+purple = "#C27AFF"
+fuchsia = "#F4A8FF"
+pink = "#FCCEE8"
+rose = "#FFA1AD"
+slate = "#62748E"
+sky = "#00598A"
+grey1 = "#6B7281"
+grey2 = "#4A5565"
+grey3 = "#364153"
+grey4 = "#101828"
+grey5 = "#030712"
+zinc = "#364153"
+neutral = "#A1A1A1"
+stone = "#7A716B"
+white = "#F3E8FF"
+string = "#0092B8"

@@ -2,28 +2,27 @@
 # gui:
 #   theme:
 #     activeBorderColor:
-#       - '#f5e0dc'
+#       - "#f5e0dc"
 #       - bold
 #     inactiveBorderColor:
-#       - '#a6adc8'
+#       - "#a6adc8"
 #     optionsTextColor:
-#       - '#89b4fa'
+#       - "#89b4fa"
 #     selectedLineBgColor:
-#       - '#313244'
+#       - "#313244"
 #     cherryPickedCommitBgColor:
-#       - '#45475a'
+#       - "#45475a"
 #     cherryPickedCommitFgColor:
-#       - '#f5e0dc'
+#       - "#f5e0dc"
 #     unstagedChangesColor:
-#       - '#f38ba8'
+#       - "#f38ba8"
 #     defaultFgColor:
-#       - '#cdd6f4'
+#       - "#cdd6f4"
 #     searchingActiveBorderColor:
-#       - '#f9e2af'
+#       - "#f9e2af"
 
 #   authorColors:
-#     '*': '#b4befe'
-
+#     "*": "#b4befe"
 # # Gruvbox Dark
 # gui:
 #   theme:
@@ -51,81 +50,80 @@
 #     '*': '#d3869b'  # purple - for authors
 
 # Tokyo Night Storm
-# gui:
-#   theme:
-#     activeBorderColor:
-#       - "#7aa2f7" # Blue (Active)
-#       - bold
-#     inactiveBorderColor:
-#       - "#565f89" # Dim gray (Inactive)
-#     optionsTextColor:
-#       - "#7dcfff" # Cyan (Options)
-#     selectedLineBgColor:
-#       - "#292e42" # Dark background highlight
-#     cherryPickedCommitBgColor:
-#       - "#3b4261" # Subtle dark bg
-#     cherryPickedCommitFgColor:
-#       - "#f7768e" # Red (emphasis)
-#     unstagedChangesColor:
-#       - "#f7768e" # Red (unstaged)
-#     defaultFgColor:
-#       - "#c0caf5" # Default foreground
-#     searchingActiveBorderColor:
-#       - "#e0af68" # Yellow (search highlight)
-
-#   authorColors:
-#     "*": "#bb9af7" # Magenta (author names)
-
-# Everforest Dark
 gui:
   theme:
     activeBorderColor:
-      - "#7fbbb3" # Blue-green (Active - Functions/Keywords)
+      - "#7aa2f7" # Blue (Active)
       - bold
     inactiveBorderColor:
-      - "#4b565c" # Gray (Inactive border)
+      - "#565f89" # Dim gray (Inactive)
     optionsTextColor:
-      - "#83c092" # Aqua (Options text)
+      - "#7dcfff" # Cyan (Options)
     selectedLineBgColor:
-      - "#434f55" # Selection background
+      - "#292e42" # Dark background highlight
     cherryPickedCommitBgColor:
-      - "#3c4841" # Subtle dark bg (darker than base)
+      - "#3b4261" # Subtle dark bg
     cherryPickedCommitFgColor:
-      - "#e67e80" # Red (emphasis)
+      - "#f7768e" # Red (emphasis)
     unstagedChangesColor:
-      - "#e67e80" # Red (unstaged)
+      - "#f7768e" # Red (unstaged)
     defaultFgColor:
-      - "#d3c6aa" # Default foreground
+      - "#c0caf5" # Default foreground
     searchingActiveBorderColor:
-      - "#dbbc7f" # Yellow (search highlight)
+      - "#e0af68" # Yellow (search highlight)
 
   authorColors:
-    "*": "#DBBC7F"
+    "*": "#bb9af7" # Magenta (author names)
+
+# Everforest Dark
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - "#7fbbb3" # Blue-green (Active - Functions/Keywords)
+#       - bold
+#     inactiveBorderColor:
+#       - "#4b565c" # Gray (Inactive border)
+#     optionsTextColor:
+#       - "#83c092" # Aqua (Options text)
+#     selectedLineBgColor:
+#       - "#434f55" # Selection background
+#     cherryPickedCommitBgColor:
+#       - "#3c4841" # Subtle dark bg (darker than base)
+#     cherryPickedCommitFgColor:
+#       - "#e67e80" # Red (emphasis)
+#     unstagedChangesColor:
+#       - "#e67e80" # Red (unstaged)
+#     defaultFgColor:
+#       - "#d3c6aa" # Default foreground
+#     searchingActiveBorderColor:
+#       - "#dbbc7f" # Yellow (search highlight)
+
+#   authorColors:
+#     "*": "#DBBC7F"
 # Ayu Mirage
 # gui:
 #   theme:
 #     activeBorderColor:
-#       - '#FFD173'
+#       - "#FFD173"
 #       - bold
 #     inactiveBorderColor:
-#       - '#B8CFE6'
+#       - "#B8CFE6"
 #     optionsTextColor:
-#       - '#FFDFB3'
+#       - "#FFDFB3"
 #     selectedLineBgColor:
-#       - '#637599'
+#       - "#637599"
 #     cherryPickedCommitBgColor:
-#       - '#B8CFE6'
+#       - "#B8CFE6"
 #     cherryPickedCommitFgColor:
-#       - '#FFD173'
+#       - "#FFD173"
 #     unstagedChangesColor:
-#       - '#95E6CB'
+#       - "#95E6CB"
 #     defaultFgColor:
-#       - '#CCCAC2'
+#       - "#CCCAC2"
 #     searchingActiveBorderColor:
-#       - '#F28779'
+#       - "#F28779"
 #   authorColors:
-#     '*': '#80BFFF'
-
+#     "*": "#80BFFF"
 # Ashen Theme
 # Author: Daniel Fichtinger
 # License: MIT

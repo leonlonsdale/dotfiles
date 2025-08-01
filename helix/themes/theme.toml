@@ -1,30 +1,9 @@
-# inherits = "kanagawa"
-# inherits = "gruvbox-material"
-# inherits = "dark_plus"
-# inherits = "catppuccin_mocha"
-# inherits = "catppuccin_macchiato"
-# inherits = "catppuccin_frappe"
-# inherits = "ashen"
-# inherits = "github_dark_dimmed"
-# inherits = "ayu_mirage"
-# inherits = "tokyonight_storm"
-# inherits = "github_dark"
-# inherits = "gruvbox"
-inherits = "everforest_dark"
-# inherits = "rose_pine_moon"
-# inherits = "carbonfox"
-# inherits = "onedark"
+inherits = "autumn"
 
 "ui.background" = {}
-# "ui.virtual.ruler" = {bg ="g_10"}
+"ui.gutter" = {}
+"ui.statusline" = {}
 
-# kanagawa edits
-# "ui.linenr" = { fg = "dragonBlack6" }
-# "ui.gutter" = { fg = "sumiInk6" }
-# "keyword" = { fg = "oniViolet"}
-# "variable.builtin" = { fg = "waveRed", modifiers = ["italic"] }
+# Autumn only
 
-# dark plus edits
-# "comment" = { fg = "dark_gray" }
-# "ui.statusline.insert" = { fg = "dark_gray2", bg = "pale_green" }
-# "variable.other.member" = "blue2"
+"ui.linenr" = { fg = "my_gray5" }

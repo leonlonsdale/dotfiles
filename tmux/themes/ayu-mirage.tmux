@@ -4,7 +4,7 @@
 set -g status on
 set -g status-interval 5
 set -g status-justify left
-# set -g status-bg "#24283B"                   # bg
+set -g status-bg "default"                   # bg
 # set -g status-fg "#c0caf5"                   # fg
 set-option -g status-style bg=default
 # set -g status-style "fg=#c0caf5,bg=default"
@@ -38,7 +38,7 @@ set -g status-left '#[fg=#24283B,bg=#D5FF80,bold] 󰈸 #S #[fg=#D5FF80,bg=defaul
 
 # === Right Status ===
 set -g status-right-length 150
-set -g status-right '#[fg=#f7768e]#(cd "#{pane_current_path}" && git rev-parse --is-inside-work-tree >/dev/null 2>&1 && echo " $(git rev-parse --abbrev-ref HEAD)") #[fg=#73D0FF,bg=default,nobold]#[fg=#24283B,bg=#73D0FF,bold] %d/%m #[fg=#24283B,bg=#DFBFFF,bold]  %H:%M #[fg=#DFBFFF,bg=default,nobold] '
+set -g status-right '#[fg=#f7768e]#(cd "#{pane_current_path}" && git rev-parse --is-inside-work-tree >/dev/null 2>&1 && echo " $(git rev-parse --abbrev-ref HEAD)") #[fg=#73D0FF,bg=default,nobold]#[fg=#24283B,bg=#73D0FF,bold] %d/%m #[fg=#24283B,bg=#DFBFFF,bold]  %H:%M#[fg=#DFBFFF,bg=default,nobold]'
 
 # === Palette Reference (Tokyo Night Storm) ===
 # bg           = "#24283B"
