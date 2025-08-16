@@ -4,12 +4,18 @@
 
 [[language]]
 name = "go"
+roots = ["go.work", "go.mod"]
 auto-format = true
 formatter = ["goimports"]
+comment-token = "//"
 language-servers = [ "gopls", "golangci-lint-lsp" ]
+# config = { "gopls" = { "staticcheck" = true }}
 
 [language-server.golangci-lint-lsp]
 command = "golangci-lint-langserver"
+
+# [language-server.golangci-lint-lsp.config]
+# command = ["golangci-lint", "run", "--out-format", "json", "--issues-exit-code=1"]
 
 [[language]]
 name = "templ"
@@ -159,7 +165,7 @@ auto-format = true
  
 [[language]]
 name = "markdown"
-text-width = 80
+text-width = 120
 soft-wrap.enable = true
 soft-wrap.wrap-at-text-width = true
 indent = { tab-width = 4, unit = "    " }

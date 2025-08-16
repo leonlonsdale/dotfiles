@@ -18,7 +18,7 @@ popup-border = "all"
 completion-replace = true
 rulers = [80]
 indent-heuristic = "tree-sitter"
-end-of-line-diagnostics = "info"
+end-of-line-diagnostics = "hint"
 rainbow-brackets = true
 
 [editor.statusline]
@@ -48,7 +48,7 @@ enable = true
 
 [editor.inline-diagnostics]
 cursor-line = "hint"
-other-lines = "disable"
+other-lines = "hint"
 max-wrap = 10
 max-diagnostics = 10
 prefix-len = 1
@@ -64,30 +64,6 @@ esc = ["collapse_selection", "keep_primary_selection"]
 G="goto_file_end"
 "{" = ["goto_next_paragraph"]
 "}" = ["goto_prev_paragraph"]
-
-# opens lazygit (if installed)
-C-g = [
-  ":write-all", 
-  ":new", 
-  ":insert-output lazygit", 
-  ':insert-output echo "\x1b[?1049h" > /dev/tty',
-  ":set mouse false", # First disable mouse to hint helix into activating it
-  ":set mouse true",
-  ":buffer-close!", 
-  ":redraw", 
-  ":reload-all"
-]
-
-# opens Yazi (if installed - requires build from source)
-C-e = [
-  ':sh rm -f /tmp/unique-file',
-  ':insert-output yazi %{buffer_name} --chooser-file=/tmp/unique-file',
-  ':insert-output echo "\x1b[?1049h\x1b[?2004h" > /dev/tty',
-  ':open %sh{cat /tmp/unique-file}',
-  ':redraw',
-  ':set mouse false',
-  ':set mouse true',
-]
 
 [keys.normal.space]
 q = ":quit"
