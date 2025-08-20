@@ -20,6 +20,7 @@ command = "golangci-lint-langserver"
 [[language]]
 name = "templ"
 auto-format = true
+language-servers = ['templ', 'vscode-html-language-server', 'tailwindcss-ls', "emmet-lsp"]
 
 # =============================================================================
 # Python 🐍
@@ -59,7 +60,7 @@ file-types = ["py", "ipynb"]
 # =============================================================================
 # 
 [language-server]
-emmet-ls = { command = "emmet-ls", args = [ "--stdio" ]}
+emmet-lsp = { command = "emmet-language-server", args = [ "--stdio" ]}
 biome = { command = "biome", args = ["lsp-proxy"] }
 tailwindcss = { command = "tailwind-css-language-server", args = ["--stdio"] }
 
@@ -90,37 +91,37 @@ provideFormatter = true
 
 [[language]]
 name = "html"
-language-servers = [ "vscode-html-language-server", "emmet-ls", "tailwindcss-ls" ]
+language-servers = [ "vscode-html-language-server", "emmet-lsp", "tailwindcss-ls" ]
 formatter = { command = 'prettier', args = ["--parser", "html"] }
 auto-format = true
 
 [[language]]
 name = "css"
-language-servers = [ "vscode-css-language-server", "emmet-ls", "tailwindcss-ls" ]
+language-servers = [ "vscode-css-language-server", "emmet-lsp", "tailwindcss-ls" ]
 formatter = { command = 'prettier', args = ["--parser", "css"] }
 auto-format = true
 
 [[language]]
 name = "javascript"
-language-servers = [ "typescript-language-server", "eslint", "emmet-ls", "tailwindcss-ls" ]
+language-servers = [ "typescript-language-server", "eslint", "emmet-lsp", "tailwindcss-ls" ]
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "typescript"
-language-servers = [ "typescript-language-server", "eslint", "emmet-ls", "tailwindcss-ls" ]
+language-servers = [ "typescript-language-server", "eslint", "emmet-lsp", "tailwindcss-ls" ]
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "jsx"
-language-servers = [ "typescript-language-server", "eslint", "emmet-ls", "tailwindcss-ls" ]
+language-servers = [ "typescript-language-server", "eslint", "emmet-lsp", "tailwindcss-ls" ]
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "tsx"
-language-servers = [ "typescript-language-server", "eslint", "emmet-ls", "tailwindcss-ls" ]
+language-servers = [ "typescript-language-server", "eslint", "emmet-lsp", "tailwindcss-ls" ]
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
 

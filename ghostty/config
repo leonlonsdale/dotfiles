@@ -9,6 +9,7 @@ macos-icon = "xray"
 mouse-hide-while-typing = true
 cursor-style-blink = true
 auto-update-channel = tip
+quick-terminal-position = center
 
 # clipboard
 # -------------------------------------
@@ -18,15 +19,20 @@ copy-on-select = clipboard
 
 # font display
 # -------------------------------------
+font-family = Jetbrains Mono
+font-style = Light
+font-style-bold = Regular
+font-style-italic = Light
+font-style-bold-italic = Regular
+adjust-cell-height = 8
+adjust-cursor-height = 8
+font-thicken = true
 
-# font-family = "Monaco"
-# font-thicken = true
-font-size = 15
-adjust-cell-height = 3
+font-size = 14
 
 # Appearance
 # -------------------------------------
-theme = "catppuccin-mocha"
+theme = "tokyonight-storm"
 # background = #1b1d1e
 # background-opacity = 0.95
 # background-blur-radius = 40
@@ -52,3 +58,4 @@ unfocused-split-opacity = 0.1
 
 keybind = alt+left=unbind
 keybind = alt+right=unbind
+keybind = global:alt+f=toggle_quick_terminal
