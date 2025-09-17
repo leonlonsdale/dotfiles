@@ -32,7 +32,7 @@ font-size = 14
 
 # Appearance
 # -------------------------------------
-theme = "tokyonight-storm"
+theme = TokyoNight Storm
 # background = #1b1d1e
 # background-opacity = 0.95
 # background-blur-radius = 40
