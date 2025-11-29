@@ -50,30 +50,30 @@
 #     '*': '#d3869b'  # purple - for authors
 
 # Tokyo Night Storm
-gui:
-  theme:
-    activeBorderColor:
-      - "#7aa2f7" # Blue (Active)
-      - bold
-    inactiveBorderColor:
-      - "#565f89" # Dim gray (Inactive)
-    optionsTextColor:
-      - "#7dcfff" # Cyan (Options)
-    selectedLineBgColor:
-      - "#292e42" # Dark background highlight
-    cherryPickedCommitBgColor:
-      - "#3b4261" # Subtle dark bg
-    cherryPickedCommitFgColor:
-      - "#f7768e" # Red (emphasis)
-    unstagedChangesColor:
-      - "#f7768e" # Red (unstaged)
-    defaultFgColor:
-      - "#c0caf5" # Default foreground
-    searchingActiveBorderColor:
-      - "#e0af68" # Yellow (search highlight)
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - "#7aa2f7" # Blue (Active)
+#       - bold
+#     inactiveBorderColor:
+#       - "#565f89" # Dim gray (Inactive)
+#     optionsTextColor:
+#       - "#7dcfff" # Cyan (Options)
+#     selectedLineBgColor:
+#       - "#292e42" # Dark background highlight
+#     cherryPickedCommitBgColor:
+#       - "#3b4261" # Subtle dark bg
+#     cherryPickedCommitFgColor:
+#       - "#f7768e" # Red (emphasis)
+#     unstagedChangesColor:
+#       - "#f7768e" # Red (unstaged)
+#     defaultFgColor:
+#       - "#c0caf5" # Default foreground
+#     searchingActiveBorderColor:
+#       - "#e0af68" # Yellow (search highlight)
 
-  authorColors:
-    "*": "#bb9af7" # Magenta (author names)
+#   authorColors:
+#     "*": "#bb9af7" # Magenta (author names)
 
 # Everforest Dark
 # gui:
@@ -285,3 +285,43 @@ gui:
 
 #   authorColors:
 #     '*': '#D27E99'  # SakuraPink - subtle and elegant
+#
+
+# Lazygit Custom Theme based on various inspirations (Catppuccin Mocha, Gruvbox Dark, Tokyo Night Storm)
+
+# GitHub Dark Theme for Lazygit
+gui:
+  theme:
+    # Active panel border (for focused elements)
+    activeBorderColor:
+      - "#cdd9e5" # Light gray for active borders (GitHub Dark style)
+      - bold
+    # Inactive panel border (for unfocused elements)
+    inactiveBorderColor:
+      - "#768390" # Muted gray for inactive borders
+    # Options text color (menu or command options)
+    optionsTextColor:
+      - "#6cb6ff" # Light blue for options text (GitHub Blue)
+    # Background color for the selected line in the file list or commit log
+    selectedLineBgColor:
+      - "#2d333b" # Dark background for selected lines (GitHub Dark)
+    # Background color for cherry-picked commits
+    cherryPickedCommitBgColor:
+      - "#444c56" # Subtle dark gray for cherry-picked commits
+    # Foreground color for cherry-picked commits
+    cherryPickedCommitFgColor:
+      - "#adbac7" # Light gray text for cherry-picked commits
+    # Unstaged changes (highlight for modified files)
+    unstagedChangesColor:
+      - "#e5534b" # Bright red for unstaged changes (GitHub alert color)
+    # Default text color (for the overall file/commit list)
+    defaultFgColor:
+      - "#adbac7" # Light gray text for general content
+    # Active search border color (when searching or filtering)
+    searchingActiveBorderColor:
+      - "#c69026" # Yellow-orange for active search highlighting
+
+  # Author color configuration (can be customized per author)
+  authorColors:
+    "*": "#6cb6ff" # Light blue for all authors (GitHub author highlight color)
+
