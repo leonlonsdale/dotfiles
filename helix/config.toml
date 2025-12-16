@@ -48,9 +48,9 @@ enable = true
 
 [editor.inline-diagnostics]
 cursor-line = "hint"
-other-lines = "hint"
+# other-lines = "hint"
 max-wrap = 10
-max-diagnostics = 10
+max-diagnostics = 5
 prefix-len = 1
 
 # =============================================================================
