@@ -59,4 +59,5 @@ unfocused-split-opacity = 0.1
 
 keybind = alt+left=unbind
 keybind = alt+right=unbind
-keybind = global:alt+f=toggle_quick_terminal
+# keybind = alt+f=unbind
+# keybind = global:alt+f=toggle_quick_terminal

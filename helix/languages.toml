@@ -103,26 +103,30 @@ auto-format = true
 
 [[language]]
 name = "javascript"
-language-servers = [ "typescript-language-server", "eslint", "emmet-lsp", "tailwindcss-ls" ]
-formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+language-servers = [ { name = "typescript-language-server", except-features = ["format"]}, "biome", "emmet-lsp", "tailwindcss-ls"]
+# language-servers = [ "typescript-language-server", "eslint", "emmet-lsp", "tailwindcss-ls" ]
+# formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "typescript"
-language-servers = [ "typescript-language-server", "eslint", "emmet-lsp", "tailwindcss-ls" ]
-formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+language-servers = [ { name = "typescript-language-server", except-features = ["format"]}, "biome", "emmet-lsp", "tailwindcss-ls"]
+# language-servers = [ "typescript-language-server", "eslint", "emmet-lsp", "tailwindcss-ls" ]
+# formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "jsx"
-language-servers = [ "typescript-language-server", "eslint", "emmet-lsp", "tailwindcss-ls" ]
-formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+language-servers = [ { name = "typescript-language-server", except-features = ["format"]}, "biome", "emmet-lsp", "tailwindcss-ls"]
+# language-servers = [ "typescript-language-server", "eslint", "emmet-lsp", "tailwindcss-ls" ]
+# formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "tsx"
-language-servers = [ "typescript-language-server", "eslint", "emmet-lsp", "tailwindcss-ls" ]
-formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+language-servers = [ { name = "typescript-language-server", except-features = ["format"]}, "biome", "emmet-lsp", "tailwindcss-ls"]
+# language-servers = [ "typescript-language-server", "eslint", "emmet-lsp", "tailwindcss-ls" ]
+# formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
 
 # =============================================================================
