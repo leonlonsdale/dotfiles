@@ -19,7 +19,7 @@ copy-on-select = clipboard
 
 # font display
 # -------------------------------------
-font-family = MonoLisa
+# font-family = JetBrains Mono
 font-style = Light
 font-style-bold = Regular
 font-style-italic = Light
@@ -33,10 +33,10 @@ font-size = 14
 # Appearance
 # -------------------------------------
 # theme = TokyoNight Storm
-theme = GitHub Dark Default
+theme = Gruvbox Material Dark
 # background = #1b1d1e
-# background-opacity = 0.95
-# background-blur-radius = 40
+background-opacity = 0.95
+background-blur-radius = 40
 unfocused-split-opacity = 0.1
 
 # keys

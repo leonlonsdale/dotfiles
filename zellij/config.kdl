@@ -522,9 +522,9 @@ themes {
 }
 
 
-theme "tokyo-night"
+// theme "tokyo-night"
 // theme "catppuccin-macchiato"
-// theme "gruvbox-dark"
+theme "gruvbox-dark"
 // theme "catppuccin-frappe"
 // theme "kanagawa"
  
