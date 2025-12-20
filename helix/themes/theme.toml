@@ -2,7 +2,8 @@
 # inherits = "aura-dark"
 # inherits = "tokyonight_storm"
 # inherits = "github_dark"
-inherits = "gruvbox-material"
+# inherits = "gruvbox-material"
+inherits = "ayu_mirage"
 
 "ui.background" = {}
 "ui.gutter" = {}

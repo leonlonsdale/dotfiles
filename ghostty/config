@@ -33,7 +33,8 @@ font-size = 14
 # Appearance
 # -------------------------------------
 # theme = TokyoNight Storm
-theme = Gruvbox Material Dark
+# theme = Gruvbox Material Dark
+theme = Ayu Mirage
 # background = #1b1d1e
 background-opacity = 0.95
 background-blur-radius = 40
