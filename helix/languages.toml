@@ -120,6 +120,7 @@ name = "jsx"
 language-servers = [ { name = "typescript-language-server", except-features = ["format"]}, "biome", "emmet-lsp", "tailwindcss-ls"]
 # language-servers = [ "typescript-language-server", "eslint", "emmet-lsp", "tailwindcss-ls" ]
 # formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+block-comment-tokens = { start = "{*/}", end = "/*}"}
 auto-format = true
 
 [[language]]
@@ -143,7 +144,8 @@ provideFormatter = true
 
 [[language]]
 name = "json"
-formatter = { command = 'prettier', args = ["--parser", "json"] }
+language-servers = [ { name = "vscode-json", except-features = ["format"]}, "biome"]
+# formatter = { command = 'prettier', args = ["--parser", "json"] }
 
 # =============================================================================
 # Database 💽

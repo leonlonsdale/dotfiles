@@ -524,9 +524,10 @@ themes {
 
 // theme "tokyo-night"
 // theme "catppuccin-macchiato"
-theme "gruvbox-dark"
+// theme "ayu"
 // theme "catppuccin-frappe"
 // theme "kanagawa"
+theme "catppuccin-mocha"
  
 // Choose the base input mode of zellij.
 // Default: normal

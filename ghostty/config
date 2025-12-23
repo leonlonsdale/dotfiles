@@ -19,12 +19,12 @@ copy-on-select = clipboard
 
 # font display
 # -------------------------------------
-# font-family = JetBrains Mono
-font-style = Light
-font-style-bold = Regular
-font-style-italic = Light
-font-style-bold-italic = Regular
-adjust-cell-height = 8
+font-family = Geist Mono
+font-style = regular
+font-style-bold = bold
+font-style-italic = regular
+font-style-bold-italic = bold
+adjust-cell-height = 10
 adjust-cursor-height = 8
 font-thicken = true
 
@@ -34,8 +34,8 @@ font-size = 14
 # -------------------------------------
 # theme = TokyoNight Storm
 # theme = Gruvbox Material Dark
-theme = Ayu Mirage
-# background = #1b1d1e
+theme = Catppuccin Mocha
+background = #1b1d1e
 background-opacity = 0.95
 background-blur-radius = 40
 unfocused-split-opacity = 0.1
