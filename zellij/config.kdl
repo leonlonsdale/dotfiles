@@ -522,12 +522,12 @@ themes {
 }
 
 
-// theme "tokyo-night"
+theme "tokyo-night"
 // theme "catppuccin-macchiato"
 // theme "ayu"
 // theme "catppuccin-frappe"
 // theme "kanagawa"
-theme "catppuccin-mocha"
+// theme "catppuccin-mocha"
  
 // Choose the base input mode of zellij.
 // Default: normal

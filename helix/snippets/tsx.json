@@ -1,0 +1,152 @@
+{
+	"Print to console": {
+		"prefix": "cl",
+		"scope": "javascript,typescript,javascriptreact",
+		"body": ["console.log($1)"],
+		"description": "console.log"
+	},
+	"useState": {
+		"prefix": "us",
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"body": ["const [$1, set$2] = useState($3)"],
+		"description": "useState"
+	},
+	"useEffect": {
+		"prefix": "ue",
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"body": ["useEffect(() => {", "\t$1", "}, [$2])"],
+		"description": "useEffect"
+	},
+	"reactContext": {
+		"prefix": "rct",
+		"scope": "javascript, typescript, javascriptreact, typescriptreact",
+		"body": [
+			"import { createContext, useContext } from 'react'",
+			"",
+			"const ${TM_FILENAME_BASE} = createContext();",
+			"",
+			"const ${TM_FILENAME_BASE}Provider = ({ children }) => {",
+			"\treturn (",
+			"\t\t<${TM_FILENAME_BASE}.Provider value={{$0}}>",
+			"\t\t\t{children}",
+			"\t\t</${TM_FILENAME_BASE}.Provider>",
+			"\t)",
+			"}",
+			"",
+			"const use${TM_FILENAME_BASE} = () => {",
+			"\tconst value = useContext(${TM_FILENAME_BASE});",
+			"\tif (value === undefined) throw new Error('You have used ${TM_FILENAME_BASE} outside of Provider. The context can only be used within a child of the ${TM_FILENAME_BASE}Provider');",
+			"\treturn value;",
+			"}",
+			"",
+			"// eslint-disable-next-line react-refresh/only-export-components",
+			"export { use${TM_FILENAME_BASE}, ${TM_FILENAME_BASE}Provider };"
+		],
+		"description": "React context"
+	},
+	"TSreactContext": {
+		"prefix": "rctt",
+		"scope": "javascript, typescript, javascriptreact, typescriptreact",
+		"body": [
+			"'use client';",
+			"",
+			"import { createContext, useContext } from 'react'",
+			"",
+			"type T$1Context = {",
+			"\t$2",
+			"};",
+			"",
+			"type T$1ContextProviderProps = {",
+			"\tchildren: React.ReactNode;",
+			"};",
+			"",
+			"const $1Context = createContext<T$1Context | null>(null);",
+			"",
+			"const $1ContextProvider = ({ children }: T$1ContextProviderProps) => {",
+			"// state",
+			"",
+			"// derived state",
+			"",
+			"// event handlers",
+			"",
+			"\treturn (",
+			"\t\t<$1Context.Provider value={{$2}}>",
+			"\t\t\t{children}",
+			"\t\t</$1Context.Provider>",
+			"\t)",
+			"}",
+			"",
+			"const use$1Context = () => {",
+			"\tconst value = useContext($1Context);",
+			"\tif (!value) throw new Error('You have used $1Context outside of its Provider. $1Context can only be used within a child of the $1ContextProvider');",
+			"\treturn value;",
+			"}",
+			"",
+			"export { use$1Context, $1ContextProvider };"
+		],
+		"description": "Typed React context"
+	},
+	"reactStyledComponent": {
+		"prefix": "rsc",
+		"scope": "javascript,typescript,javascriptreact",
+		"body": [
+			"import styled from 'styled-components'",
+			"",
+			"const Styled${TM_FILENAME_BASE} = styled.$0``",
+			"",
+			"function ${TM_FILENAME_BASE}() {",
+			"\treturn (",
+			"\t\t<Styled${TM_FILENAME_BASE}>",
+			"\t\t\t${TM_FILENAME_BASE}",
+			"\t\t</Styled${TM_FILENAME_BASE}>",
+			"\t)",
+			"}",
+			"",
+			"export default ${TM_FILENAME_BASE}",
+			""
+		],
+		"description": "React styled component"
+	},
+	"importCSSModule": {
+		"prefix": "csm",
+		"scope": "javascript,typescript,javascriptreact",
+		"body": ["import styles from './${TM_FILENAME_BASE}.module.css'"],
+		"description": "Import CSS Module as `styles`"
+	},
+	"reactComponent": {
+		"prefix": "rfc",
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"body": [
+			"const ${1:${TM_FILENAME_BASE}} =${2| , async|} () => {",
+			"\treturn (",
+			"\t\t<${3|div,section,header,main,footer,nav,form,button,h1,ul,aside,article|}>",
+			"\t\t\t${1}$0",
+			"\t\t</${3}>",
+			"\t)",
+			"}",
+			"",
+			"export default ${1}"
+		],
+		"description": "React components"
+	},
+	"reactComponentwProps": {
+		"prefix": "rfct",
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"body": [
+			"type ${1:${TM_FILENAME_BASE}}Props = {",
+			"${2| ,children: React.ReactNode;|}",
+			"}",
+			"",
+			"const ${1} = ({${3| ,children|}}: ${1}Props) => {",
+			"\treturn (",
+			"\t\t<${4|div,section,header,main,footer,nav,form,button,h1,ul,aside,article|}>",
+			"\t\t\t${1}$0",
+			"\t\t</${4}>",
+			"\t)",
+			"}",
+			"",
+			"export default ${1}"
+		],
+		"description": "React components with props"
+	}
+}

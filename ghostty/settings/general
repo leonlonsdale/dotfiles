@@ -1,0 +1,4 @@
+mouse-hide-while-typing = true
+cursor-style-blink = true
+auto-update-channel = tip
+quick-terminal-position = center

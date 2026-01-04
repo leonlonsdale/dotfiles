@@ -1,0 +1,6 @@
+theme = TokyoNight Storm
+background-opacity = 0.95
+background-blur-radius = 40
+unfocused-split-opacity = 0.1
+window-padding-x = 15
+window-padding-y = 15

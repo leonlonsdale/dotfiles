@@ -1,28 +1,28 @@
 # Catppuccin Mocha
-gui:
-  theme:
-    activeBorderColor:
-      - "#f5e0dc"
-      - bold
-    inactiveBorderColor:
-      - "#a6adc8"
-    optionsTextColor:
-      - "#89b4fa"
-    selectedLineBgColor:
-      - "#313244"
-    cherryPickedCommitBgColor:
-      - "#45475a"
-    cherryPickedCommitFgColor:
-      - "#f5e0dc"
-    unstagedChangesColor:
-      - "#f38ba8"
-    defaultFgColor:
-      - "#cdd6f4"
-    searchingActiveBorderColor:
-      - "#f9e2af"
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - "#f5e0dc"
+#       - bold
+#     inactiveBorderColor:
+#       - "#a6adc8"
+#     optionsTextColor:
+#       - "#89b4fa"
+#     selectedLineBgColor:
+#       - "#313244"
+#     cherryPickedCommitBgColor:
+#       - "#45475a"
+#     cherryPickedCommitFgColor:
+#       - "#f5e0dc"
+#     unstagedChangesColor:
+#       - "#f38ba8"
+#     defaultFgColor:
+#       - "#cdd6f4"
+#     searchingActiveBorderColor:
+#       - "#f9e2af"
 
-  authorColors:
-    "*": "#b4befe"
+#   authorColors:
+#     "*": "#b4befe"
 # # Gruvbox Dark
 # gui:
 #   theme:
@@ -50,30 +50,30 @@ gui:
 #     "*": "#d3869b" # purple - for authors
 
 # Tokyo Night Storm
-# gui:
-#   theme:
-#     activeBorderColor:
-#       - "#7aa2f7" # Blue (Active)
-#       - bold
-#     inactiveBorderColor:
-#       - "#565f89" # Dim gray (Inactive)
-#     optionsTextColor:
-#       - "#7dcfff" # Cyan (Options)
-#     selectedLineBgColor:
-#       - "#292e42" # Dark background highlight
-#     cherryPickedCommitBgColor:
-#       - "#3b4261" # Subtle dark bg
-#     cherryPickedCommitFgColor:
-#       - "#f7768e" # Red (emphasis)
-#     unstagedChangesColor:
-#       - "#f7768e" # Red (unstaged)
-#     defaultFgColor:
-#       - "#c0caf5" # Default foreground
-#     searchingActiveBorderColor:
-#       - "#e0af68" # Yellow (search highlight)
+gui:
+  theme:
+    activeBorderColor:
+      - "#7aa2f7" # Blue (Active)
+      - bold
+    inactiveBorderColor:
+      - "#565f89" # Dim gray (Inactive)
+    optionsTextColor:
+      - "#7dcfff" # Cyan (Options)
+    selectedLineBgColor:
+      - "#292e42" # Dark background highlight
+    cherryPickedCommitBgColor:
+      - "#3b4261" # Subtle dark bg
+    cherryPickedCommitFgColor:
+      - "#f7768e" # Red (emphasis)
+    unstagedChangesColor:
+      - "#f7768e" # Red (unstaged)
+    defaultFgColor:
+      - "#c0caf5" # Default foreground
+    searchingActiveBorderColor:
+      - "#e0af68" # Yellow (search highlight)
 
-#   authorColors:
-#     "*": "#bb9af7" # Magenta (author names)
+  authorColors:
+    "*": "#bb9af7" # Magenta (author names)
 
 # Everforest Dark
 # gui:

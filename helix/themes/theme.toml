@@ -1,9 +1,9 @@
 # inherits = "autumn"
 # inherits = "aura-dark"
-# inherits = "tokyonight_storm"
+inherits = "tokyonight_storm"
 # inherits = "github_dark"
 # inherits = "gruvbox-material"
-inherits = "catppuccin_mocha"
+# inherits = "catppuccin_mocha"
 
 "ui.background" = {}
 "ui.gutter" = {}
